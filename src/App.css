@@ -1,38 +1,75 @@
 .App {
   text-align: center;
+  height: 100%;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.parent {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  flex-flow: column;
+  width: 100vw;
+  height: 100vh;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .div1 { 
+    flex: 0 1 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #131a48;
   }
-}
+
+  div.container {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+  }
+
+  .navbar {
+    color: #131a48;
+  }
+
+  .navbar-brand {
+    color: #131a48;
+  }
+
+  .div2 { 
+    flex: 1 1 auto;
+    background-image: url("./city.jpg");
+    background-size: 100% auto;
+  }
+
+  .div3 { 
+    flex: 0 1 80px;
+    background-color: #131a48;
+  }
+
+  .card {
+    background-color: #add8e6;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+    margin-top: 10%;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  div.card-title.h5 {
+    text-align: center;
+    font-weight: 800;
+    color: #131a48;
+
+  }
+
+  p.card-text {
+    text-align: center;
+    font-weight: 600;
+    color: #131a48;
+  }
+
+  div.card-body {
+    text-align: center;
+  }
+
+  button.btn.btn-primary {
+    background-color: #131a48;
+    color: #fea07a;
+    font-weight: 800;
+  }
